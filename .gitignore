@@ -1,0 +1,7 @@
+terraform practice/.terraform/
+terraform practice/terraform.tfstate
+terraform practice/terraform.tfstate.backup
+terraform practice/terraform.tfvars
+
+*.pem
+*accessKeys*.csv

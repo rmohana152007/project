@@ -1,0 +1,475 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <script src="https://cdn.jsdelivr.net/npm/particles.js@2.0.0/particles.min.js"></script>
+
+    <link
+  rel="stylesheet"
+  href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css"
+/>
+
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Mohana R | Portfolio</title>
+
+  <link rel="stylesheet" href="style.css">
+
+  <!-- GSAP -->
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/gsap.min.js"></script>
+
+  <!-- Three.js -->
+  <script src="https://cdn.jsdelivr.net/npm/three@0.160.0/build/three.min.js"></script>
+
+  <!-- Particles.js -->
+  <script src="https://cdn.jsdelivr.net/npm/particles.js@2.0.0/particles.min.js"></script>
+</head>
+<script src="https://cdn.jsdelivr.net/npm/emailjs-com@3/dist/email.min.js"></script>
+<script>
+  (function(){
+    emailjs.init("z96cGHpOH_O18nmjM");
+  })();
+</script>
+
+<body>
+    <!-- AURORA BACKGROUND -->
+<div class="aurora"></div>
+
+
+  <!-- PARTICLES -->
+  <div id="particles-js"></div>
+
+  <!-- NAV -->
+  <nav class="top-nav">
+
+  <!-- LEFT PROFILE -->
+  <div class="nav-profile">
+    <div class="nav-logo">MR</div>
+    <div class="nav-text">
+      <h4>Mohana R</h4>
+      <span>Aspiring Cloud Application Developer</span>
+    </div>
+  </div>
+
+  <!-- RIGHT MENU -->
+  <div class="nav-links">
+    <span data-page="home">Home</span>
+    <span data-page="about">About</span>
+    <span data-page="skills">Skills</span>
+    <span data-page="projects">Projects</span>
+    <span data-page="resume">Resume</span> 
+    <span data-page="contact">Contact</span>
+  </div>
+
+</nav>
+
+
+  <!-- HOME -->
+<section class="page active" id="home">
+
+  <!-- NAME -->
+  <h1 class="hero-text">
+  <span class="greet-text">Hi I AM,</span><br>
+  MOHANA R
+</h1>
+
+
+  <!-- TAGLINE -->
+  <p class="hero-sub">Aspiring Cloud Application Developer</p>
+    <!-- divider line -->
+  <div class="hero-divider"></div>
+
+  <!-- buttons -->
+  <div class="hero-btn-group">
+
+  <div class="hero-contact-btn">
+    Contact/Hire me
+  </div>
+
+  <a 
+    href="https://www.linkedin.com/in/mohana-r-b81b14375" 
+    target="_blank" 
+    class="hero-linkedin-btn"
+  >
+    LinkedIn
+  </a>
+  <a
+  href="https://github.com/mohana-r2007"
+  target="_blank"
+  class="hero-github-btn"
+>
+  GitHub
+</a>
+
+
+</div>
+
+
+  </div>
+
+  
+  <!-- PROFILE IMAGE -->
+  
+<img 
+  src="photo.jpg" 
+  alt="Mohana R Profile Photo" 
+  class="hero-photo"
+/>
+
+
+  >
+
+</section>
+
+
+  <!-- ABOUT -->
+  <section class="page" id="about">
+  <h1>About Me</h1>
+
+  <div class="about-wrapper">
+
+    <!-- ABOUT TEXT -->
+    <div class="about-text">
+      <p>
+  I am an aspiring Cloud Application Developer with a strong interest in building
+  scalable, reliable, and efficient software solutions. I enjoy understanding how
+  applications work end-to-end, from writing clean code to deploying and managing
+  services in cloud environments. My goal is to grow into a developer who can design
+  systems that are both user-friendly and technically sound.
+</p>
+
+<p>
+  I have a foundational understanding of cloud computing concepts and hands-on exposure
+  to AWS services such as EC2, S3, IAM, and basic networking components. Along with cloud
+  learning, I actively work with Linux systems, command-line tools, and programming
+  languages like Java, Python, and C to strengthen my backend and system-level knowledge.
+</p>
+
+<p>
+  I believe in learning by doing. I continuously practice through labs, mini projects,
+  and problem-solving exercises to reinforce my understanding. Rather than memorizing
+  tools, I focus on understanding the core concepts behind cloud infrastructure,
+  operating systems, and application development, which helps me adapt quickly to
+  new technologies.
+</p>
+
+<p>
+  I am highly motivated, self-driven, and open to feedback. I am currently seeking
+  internship and entry-level opportunities where I can apply my skills, gain
+  real-world experience, and contribute to meaningful projects while learning from
+  experienced professionals in the industry.
+</p>
+
+    </div>
+
+    <!-- ABOUT ICON (AUTO – NO IMAGE FILE) -->
+    <div class="about-icon-side">
+      <i class="fas fa-user-astronaut about-fa-icon"></i>
+    </div>
+
+  </div>
+</section>
+
+  <!-- SKILLS -->
+  <section class="page" id="skills">
+  <h1>Skills</h1>
+
+  <div class="skills-layout">
+
+    <!-- LEFT SIDE: INTRO / EXPLANATION -->
+    <div class="skills-intro">
+      <h3>My Skills Overview</h3>
+      <p>
+        I focus on building strong technical fundamentals that support my journey
+        as an aspiring Cloud Application Developer. My learning approach is
+        hands-on and concept-driven, where I first understand the basics and then
+        apply them through practice. I continuously improve my skills by working
+        on labs, problem solving, and real-world scenarios.
+      </p>
+      <p>
+        These skills represent my current level of understanding and my commitment
+        to grow consistently in cloud computing, system administration, and
+        software development.
+      </p>
+    </div>
+
+    <!-- RIGHT SIDE: SKILL SCORE BOARD -->
+    <div class="skills-box">
+
+      <div class="skill">
+        <span>C Programming</span>
+        <div class="skill-bar">
+          <div class="skill-fill" data-level="80%"></div>
+        </div>
+        <small>80%</small>
+      </div>
+
+      <div class="skill">
+        <span>AWS Cloud (Beginner)</span>
+        <div class="skill-bar">
+          <div class="skill-fill" data-level="65%"></div>
+        </div>
+        <small>65%</small>
+      </div>
+
+      <div class="skill">
+        <span>Linux</span>
+        <div class="skill-bar">
+          <div class="skill-fill" data-level="60%"></div>
+        </div>
+        <small>60%</small>
+      </div>
+
+      <div class="skill">
+        <span>Networking</span>
+        <div class="skill-bar">
+          <div class="skill-fill" data-level="55%"></div>
+        </div>
+        <small>55%</small>
+      </div>
+
+      <div class="skill">
+        <span>Problem Solving</span>
+        <div class="skill-bar">
+          <div class="skill-fill" data-level="75%"></div>
+        </div>
+        <small>75%</small>
+      </div>
+
+    </div>
+
+  </div>
+</section>
+
+
+
+  <!-- PROJECTS -->
+<section class="page" id="projects">
+  <h1>Projects</h1>
+
+  <div class="projects-grid">
+
+    <div class="project-card" data-project="p1">
+      <div class="project-avatar"><i class="fas fa-cloud"></i></div>
+      <div class="project-title">Cloud Portfolio Website</div>
+    </div>
+
+    <div class="project-card" data-project="p2">
+      <div class="project-avatar"><i class="fas fa-server"></i></div>
+      <div class="project-title">AWS EC2 & S3 Practice</div>
+    </div>
+
+    <div class="project-card" data-project="p6">
+      <div class="project-avatar"><i class="fas fa-shield-halved"></i></div>
+      <div class="project-title">AWS IAM & Security Basics</div>
+    </div>
+
+    <div class="project-card" data-project="p3">
+      <div class="project-avatar"><i class="fab fa-linux"></i></div>
+      <div class="project-title">Linux Command Line Lab</div>
+    </div>
+
+    <div class="project-card" data-project="p4">
+      <div class="project-avatar"><i class="fas fa-network-wired"></i></div>
+      <div class="project-title">Networking Basics Lab</div>
+    </div>
+
+    <div class="project-card" data-project="p5">
+      <div class="project-avatar"><i class="fas fa-brain"></i></div>
+      <div class="project-title">Problem Solving Programs</div>
+    </div>
+
+  </div>
+</section>
+
+
+<!-- PROJECT DETAIL POPUP -->
+<div id="project-popup">
+  <div class="popup-content">
+    <span id="close-popup">✕</span>
+
+    <h2 id="popup-title"></h2>
+
+    <div class="popup-section">
+      <h4>What is this project?</h4>
+      <p id="popup-what"></p>
+    </div>
+
+    <div class="popup-section">
+      <h4>Technologies Used</h4>
+      <p id="popup-tech"></p>
+    </div>
+
+    <div class="popup-section">
+      <h4>What I Learned</h4>
+      <p id="popup-learn"></p>
+    </div>
+  </div>
+</div>
+<section class="page" id="resume">
+  <h1>Resume</h1>
+
+  <div class="resume-layout">
+
+    <!-- LEFT CONTENT -->
+    <div class="resume-content">
+
+      <div class="resume-block">
+        <h3>Professional Summary</h3>
+        <p>
+          Aspiring Cloud Application Developer with a strong foundation in programming,
+          cloud fundamentals, and Linux-based systems. I enjoy building scalable,
+          efficient applications and continuously improving my skills through hands-on
+          projects, coursework, and certifications. Highly motivated to grow in a
+          cloud-focused development role.
+        </p>
+      </div>
+
+      <div class="resume-block">
+        <h3>Education</h3>
+        <p><b>BE – Computer Science</b></p>
+        <p>St. Joseph’s Institute of Technology, Chennai</p>
+        <p>2024 – 2028 | CGPA: 7.98</p>
+      </div>
+
+      <div class="resume-block">
+        <h3>Experience</h3>
+        <p><b>Java Developer Intern – Next Technology, Salem</b></p>
+        <ul>
+          <li>Worked on Java-based applications and backend logic</li>
+          <li>Assisted in debugging, testing, and improving application performance</li>
+          <li>Gained exposure to real-world development workflows</li>
+        </ul>
+      </div>
+
+      <div class="resume-block">
+        <h3>Technical Skills</h3>
+        <ul>
+          <li><b>Programming:</b> Java, Python, C</li>
+          <li><b>Cloud & DevOps:</b> AWS (EC2, RDS, Lambda), Docker</li>
+          <li><b>Operating Systems:</b> Linux (CLI, scripting basics)</li>
+          <li><b>Networking:</b> Networking fundamentals & protocols</li>
+          <li><b>Tools:</b> Git, VS Code, MySQL</li>
+        </ul>
+      </div>
+
+      <div class="resume-block">
+        <h3>Certifications</h3>
+        <ul>
+          <li>AWS Foundations</li>
+          <li>AWS Emerging Talent Community</li>
+          <li>Cloud Quest – Linux</li>
+          <li>Networking Basics</li>
+        </ul>
+      </div>
+
+      <div class="resume-block">
+        <h3>Career Objective</h3>
+        <p>
+          To secure an entry-level Cloud / Software Development role where I can apply
+          my technical knowledge, gain industry experience, and contribute to building
+          reliable and scalable cloud-based solutions.
+        </p>
+      </div>
+
+    </div>
+
+    <!-- RIGHT SIDE ICON + BUTTON -->
+<div class="resume-side">
+
+  <div class="resume-icon">
+    <i class="fas fa-file-alt"></i>
+  </div>
+
+  <a href="mohana-resume.pdf" download class="resume-download-btn">
+    Download Resume
+  </a>
+
+</div>
+
+
+    </div>
+
+  </div>
+</section>
+
+
+
+
+ <section class="page" id="contact">
+
+  <h1>Contact</h1>
+
+  <div class="contact-box">
+
+    <form
+       id="contact-form" class="contact-form">
+
+  <input
+    type="text"
+    name="name"
+    placeholder="Your Name"
+    required
+  />
+
+  <input
+    type="email"
+    name="email"
+    placeholder="Your Email"
+    required
+  />
+
+  <textarea
+    name="message"
+    placeholder="Message"
+    required
+  ></textarea>
+
+  <button type="submit" class="contact-send-btn">
+    Send Message
+  </button>
+
+</form>
+
+      <!-- DOWN ARROW TO NEXT SECTION -->
+<div class="scroll-down" data-target="get-in-touch">
+  <i class="fas fa-chevron-down"></i>
+</div>
+
+
+    </form>
+
+  </div>
+
+</section>
+
+<!-- GET IN TOUCH SECTION -->
+<section class="page" id="get-in-touch">
+
+  <h1>Get in Touch</h1>
+
+  <div class="get-touch-box">
+
+    <p class="get-touch-desc">
+      I welcome messages regarding internships, project collaborations,
+      freelance opportunities, or discussions about cloud computing and
+      software development. I typically respond within 24 hours.
+    </p>
+
+    <div class="get-touch-info">
+      <p><b>Email:</b> rmohana152007@gmail.com</p>
+      <p><b>Phone:</b> +91 9043491085</p>
+      <p><b>Linkedin:</b>https://www.linkedin.com/in/mohana-r-b81b14375 </p>
+    </div>
+
+    <p class="get-touch-note">
+      📌 Open to remote opportunities & internshipsand  Drop a message and I’ll get back to you.
+    </p>
+ 
+  </div>
+
+</section>
+
+
+  <script src="script.js"></script>
+</body>
+</html>
