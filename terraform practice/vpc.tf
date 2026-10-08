@@ -1,6 +1,6 @@
 #vpc
 resource "aws_vpc" "trainvpc" {
-  cidr_block       = "10.0.0.0/16"
+  cidr_block       = "11.0.0.0/16"
   instance_tenancy = "default"
 
   tags = {
@@ -9,26 +9,33 @@ resource "aws_vpc" "trainvpc" {
 }
 
 
+
 #private sub
-resource "aws_subnet" "pri_sub" {
-  vpc_id     = aws_vpc.trainvpc.id
-  cidr_block = "10.0.1.0/24"
+resource "aws_subnet" "pub-sub1" {
+  vpc_id                  = aws_vpc.trainvpc.id
+  cidr_block              = "11.0.1.0/24"
+  availability_zone       = "ap-south-1a"
+  map_public_ip_on_launch = true
 
   tags = {
-    Name = "pri_subtf"
+    Name = "publicsubnet1"
   }
 }
+
 
 
 #public sub
-resource "aws_subnet" "pub_sub" {
-  vpc_id     = aws_vpc.trainvpc.id
-  cidr_block = "10.0.2.0/24"
+resource "aws_subnet" "pub-sub2" {
+  vpc_id                  = aws_vpc.trainvpc.id
+  cidr_block              = "11.0.2.0/24"
+  availability_zone       = "ap-south-1b"
+  map_public_ip_on_launch = true
 
   tags = {
-    Name = "pub_subtf"
+    Name = "publicsubnet2"
   }
 }
+
 
 
 #gateway
@@ -56,15 +63,22 @@ resource "aws_route_table" "demo_rt" {
   }
 }
 
+
+
 #associate to pub-sub
-resource "aws_route_table_association" "associatert" {
-  subnet_id      = aws_subnet.pub_sub.id
+resource "aws_route_table_association" "subnet1" {
+  subnet_id      = aws_subnet.pub-sub1.id
   route_table_id = aws_route_table.demo_rt.id
 }
 
+resource "aws_route_table_association" "subnet2" {
+  subnet_id      = aws_subnet.pub-sub2.id
+  route_table_id = aws_route_table.demo_rt.id
+}
+
+
+
 #security group
-
-
 resource "aws_security_group" "securitygrouptf" {
   name        = "allow_tls"
   description = "Allow TLS inbound traffic and all outbound traffic"
