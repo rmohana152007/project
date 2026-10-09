@@ -9,7 +9,7 @@ resource "aws_instance" "ec21" {
 associate_public_ip_address = true
 user_data = file("${path.module}/user-data.sh")
   tags = {
-    Name = "demoinstance"
+    Name = "instance1"
     team = "sjce-devops"
   }
 }
@@ -64,7 +64,7 @@ resource "aws_instance" "ec2" {
 associate_public_ip_address = true
 user_data = file("${path.module}/user-data.sh")
   tags = {
-    Name = "demoinstance"
+    Name = "instance2"
     team = "sjce-devops"
   }
 }
