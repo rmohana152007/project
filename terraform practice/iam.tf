@@ -1,8 +1,9 @@
 resource "aws_iam_user" "demouser" {
-  name = "sjcedemo"
+  name = "sjcedemo2"
   path = "/"
 
   tags = {
-    tag-key = ""
+     Name        = "sjcedemo2"
+    Environment = "DevOps-Practice"
   }
 }
