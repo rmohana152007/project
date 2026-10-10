@@ -1,8 +1,6 @@
 
 #!/bin/bash
-
-exec > >(tee /var/log/user-data.log | logger -t user-data -s 2>/dev/console) 2>&1
-
+exec > /var/log/user-data.log 2>&1
 set -euxo pipefail
 
 echo "Updating packages..."
